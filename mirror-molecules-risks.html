@@ -4,26 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life Saving or World Ending?</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
   <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
   <link rel="stylesheet" href="./mirror-molecules.css">
 </head>
+
 <body data-page="risks">
   <canvas id="environment" aria-hidden="true"></canvas>
-  <header class="site-nav lab-nav">
-    <a class="brand" href="./mirror-molecules.html">Mirror Molecules</a>
-    <nav aria-label="Site pages">
-      <a href="./mirror-molecules.html">Home</a>
-      <a href="./mirror-molecules-lab.html">Lab</a>
-      <a href="./mirror-molecules-life.html">Mirror Life</a>
-      <a class="active" href="./mirror-molecules-risks.html">Risks</a>
-      <a href="./mirror-molecules-verdict.html">Verdict</a>
-    </nav>
-  </header>
 
   <main>
+
     <section class="hero hero-risks">
       <div class="hero-copy dark-title">
         <h1>Life Saving or World Ending?</h1>
@@ -31,33 +25,95 @@
       <a class="scroll-cue dark" href="#benefits">↓</a>
     </section>
 
+    <!-- BENEFITS -->
     <section id="benefits" class="page-section white-section">
       <h2 class="section-heading left">Potential Benefits</h2>
-      <p class="lead dark-copy">Mirror cells could have a variety of unique interactions with natural cells and living things. These properties could be used to benefit medicine, agriculture, and many other fields.</p>
+      <p class="lead dark-copy">
+        Mirror cells could have a variety of unique interactions with natural cells and living things. These properties could be used to benefit medicine, agriculture, and many other fields.
+      </p>
+
       <div class="section-grid">
-        <div class="image-panel image-ferment"></div>
-        <div class="copy-stack dark-copy"><h3>Taking Advantage of Handedness</h3><p>Hundreds of products we consume utilize fermentation. A main risk is contamination by phages, a type of virus that consumes bacteria. Mirror bacteria could evade phages and solve countless problems in manufacturing food, drinks, and medicine.</p></div>
+
+        <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;">
+          <img src="https://static.scientificamerican.com/dam/m/2bdcb4f8fb83abed/original/organic-shaped-DNA-structure.jpg?m=1734190459.769&crop=16%3A9%2Csmart&w=1920"
+               alt="DNA structure"
+               style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+
+        <div class="copy-stack dark-copy">
+          <h3>Taking Advantage of Handedness</h3>
+          <p>Hundreds of products we consume utilize fermentation. A main risk is contamination by phages, a type of virus that consumes bacteria. Mirror bacteria could evade phages and solve countless problems in manufacturing food, drinks, and medicine.</p>
+        </div>
+
       </div>
+
       <div class="section-grid reverse">
-        <div class="model-panel light-panel" data-model="phenylalaninePair" aria-label="Interactive 3D L and D phenylalanine mirror amino acids"></div>
-        <div class="copy-stack dark-copy"><h3>A New World of Medicines</h3><p>Mirror peptides have the potential to avoid being broken down by the body's natural processes while still binding to the correct target cells, allowing therapeutics with longer efficacy, fewer side effects, and a lower dose.</p></div>
+
+        <div class="model-panel light-panel" data-model="phenylalaninePair"
+             aria-label="Interactive 3D L and D phenylalanine mirror amino acids"></div>
+
+        <div class="copy-stack dark-copy">
+          <h3>A New World of Medicines</h3>
+          <p>Mirror peptides have the potential to avoid being broken down by the body's natural processes while still binding to the correct target cells, allowing therapeutics with longer efficacy, fewer side effects, and a lower dose.</p>
+        </div>
+
       </div>
     </section>
 
+    <!-- RISKS -->
     <section class="page-section risk-dark">
       <h2 class="section-heading left">Potential Risks</h2>
-      <p class="lead">Despite the potential benefits, teams of specialists across the world are arguing against the pursuit of mirror life, warning that it could possibly lead to irreversible ecosystem destruction or the creation of untreatable diseases.</p>
+
+      <p class="lead">
+        Despite the potential benefits, teams of specialists across the world are arguing against the pursuit of mirror life, warning that it could possibly lead to irreversible ecosystem destruction or the creation of untreatable diseases.
+      </p>
+
       <div class="section-grid">
-        <div class="image-panel image-invasive"></div>
-        <div class="copy-stack"><h3>Unstoppable Invasive Species</h3><p>If mirror bacteria were synthesized and released, they would have no predators to keep their population under control, allowing them to rapidly replicate and consume resources with no way to stop them. This imbalance would destroy natural microorganism populations and ecosystems.</p></div>
+
+        <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;">
+          <img src="https://bigthink.com/wp-content/uploads/2025/09/mirror-life_e83e49.jpg?quality=85&w=1200&h=675&crop=1"
+               alt="Mirror life concept"
+               style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+
+        <div class="copy-stack">
+          <h3>Unstoppable Invasive Species</h3>
+          <p>If mirror bacteria were synthesized and released, they would have no predators to keep their population under control, allowing them to rapidly replicate and consume resources with no way to stop them. This imbalance would destroy natural microorganism populations and ecosystems.</p>
+        </div>
+
       </div>
+
+      <!-- SWAPPED SECTION (TEXT FIRST, IMAGE SECOND like “A New World of Medicines”) -->
       <div class="section-grid reverse">
-        <div class="image-panel image-immune"></div>
-        <div class="copy-stack"><h3>Undetectable, Incurable Diseases</h3><p>Scientists hypothesize that mirror bacteria would go undetected by immune systems and would not respond to antibiotics. This poses a risk for diseases with unprecedented mortality and possible chemical warfare.</p></div>
+
+        <div class="copy-stack">
+          <h3>Undetectable, Incurable Diseases</h3>
+          <p>Scientists hypothesize that mirror bacteria would go undetected by immune systems and would not respond to antibiotics. This poses a risk for diseases with unprecedented mortality and possible chemical warfare.</p>
+        </div>
+
+        <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;">
+          <img src="https://healthcare.utah.edu/sites/g/files/zrelqx136/files/media/images/2024/mirror%20life%20graphic%20credit%20NIAID.png"
+               alt="Mirror life disease concept"
+               style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+
       </div>
-      <p class="bridge">Whether positive or negative, the development of mirror life holds the potential to make massive change in our world.</p>
-      <a class="button-link" href="./mirror-molecules-verdict.html">The Future of Mirror Life</a>
+
+      <p class="bridge">
+        Whether positive or negative, the development of mirror life holds the potential to make massive change in our world.
+      </p>
+
+      <!-- CENTERED BUTTON -->
+      <div style="display:flex; justify-content:center; width:100%; margin-top:2.5rem;">
+        <a class="button-link"
+           href="./mirror-molecules-verdict.html"
+           style="display:inline-flex; align-items:center; justify-content:center; height:44px; line-height:1; padding:0 18px;">
+          The Future of Mirror Life
+        </a>
+      </div>
+
     </section>
+
   </main>
 
   <script type="module" src="./mirror-molecules.js"></script>
