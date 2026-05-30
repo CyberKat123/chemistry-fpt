@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Distinguishing Mirror Molecules</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
   <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
   <link rel="stylesheet" href="./mirror-molecules.css">
+
+  <style>
+    .center-button {
+      display: block;
+      width: fit-content;
+      margin: 2.5rem auto 0 auto;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body data-page="lab">
   <canvas id="environment" aria-hidden="true"></canvas>
-  <header class="site-nav lab-nav">
-    <a class="brand" href="./mirror-molecules.html">Mirror Molecules</a>
-    <nav aria-label="Site pages">
-      <a href="./mirror-molecules.html">Home</a>
-      <a class="active" href="./mirror-molecules-lab.html">Lab</a>
-      <a href="./mirror-molecules-life.html">Mirror Life</a>
-      <a href="./mirror-molecules-risks.html">Risks</a>
-      <a href="./mirror-molecules-verdict.html">Verdict</a>
-    </nav>
-  </header>
 
   <main>
     <section class="hero hero-lab">
@@ -33,7 +35,9 @@
 
     <section id="content" class="page-section pale-section">
       <div class="section-grid">
+
         <div class="model-panel light-panel" data-model="cipReal" aria-label="Interactive 3D bromochlorofluoromethane Cahn-Ingold-Prelog model"></div>
+
         <div class="copy-stack dark-copy">
           <h2>R/S Naming System</h2>
           <p>To distinguish between molecules, scientists use the Cahn-Ingold-Prelog (R/S) naming system.</p>
@@ -45,6 +49,7 @@
           </ol>
           <p class="small-note">In the event of a tie, move to the next atom in the chain and continue ranking until a difference is found.</p>
         </div>
+
       </div>
     </section>
 
@@ -54,6 +59,7 @@
         <p>The difference between left-handed and right-handed molecules becomes incredibly important in pharmacology. More than half of all drugs currently used pharmaceutically are chiral, with 90% of those drugs being racemic.</p>
         <p>This is significant, as the enzymes, proteins, and receptors in the body interact with each enantiomer differently.</p>
       </div>
+
       <div class="term-grid">
         <article><h3>Eutomer</h3><p>The bioactive enantiomer that delivers the desired effect.</p></article>
         <article><h3>Distomer</h3><p>The opposite, which may reduce efficacy, require chiral inversion, or cause toxicity and undesired side effects.</p></article>
@@ -62,13 +68,34 @@
 
     <section class="page-section white-section">
       <h2 class="section-heading">Case Studies</h2>
+
       <div class="case-grid">
-        <article><div class="model-card" data-model="thalidomide"></div><h3>The Thalidomide Tragedy</h3><p>In the late 1950s/early 1960s, thalidomide was prescribed in a racemic mixture to pregnant women as a way to treat morning sickness. The right-handed molecule was a safe and effective sedative, but the left-handed one was highly toxic and resulted in severe birth defects in thousands of infants across the globe.</p></article>
-        <article><div class="model-card" data-model="dopa"></div><h3>L-DOPA vs. D-DOPA</h3><p>While developing treatment for Parkinson's disease, scientists prescribed a racemic mixture of L-dopa and D-dopa. D-dopa was highly ineffective and caused dangerous granulocytopenia. Pure L-dopa is now the clinical standard.</p></article>
-        <article><div class="model-card" data-model="ethambutol"></div><h3>Ethambutol</h3><p>(S,S)-Ethambutol has been able to cure Mycobacterium tuberculosis and save thousands of lives. (R,R)-ethambutol has a fraction of the potency while increasing the risk of optic neuropathy.</p></article>
+        <article>
+          <div class="model-card" data-model="thalidomide"></div>
+          <h3>The Thalidomide Tragedy</h3>
+          <p>In the late 1950s/early 1960s, thalidomide was prescribed in a racemic mixture to pregnant women as a way to treat morning sickness. The right-handed molecule was a safe and effective sedative, but the left-handed one was highly toxic and resulted in severe birth defects in thousands of infants across the globe.</p>
+        </article>
+
+        <article>
+          <div class="model-card" data-model="dopa"></div>
+          <h3>L-DOPA vs. D-DOPA</h3>
+          <p>While developing treatment for Parkinson's disease, scientists prescribed a racemic mixture of L-dopa and D-dopa. D-dopa was highly ineffective and caused dangerous granulocytopenia. Pure L-dopa is now the clinical standard.</p>
+        </article>
+
+        <article>
+          <div class="model-card" data-model="ethambutol"></div>
+          <h3>Ethambutol</h3>
+          <p>(S,S)-Ethambutol has been able to cure Mycobacterium tuberculosis and save thousands of lives. (R,R)-ethambutol has a fraction of the potency while increasing the risk of optic neuropathy.</p>
+        </article>
       </div>
-      <p class="bridge dark-copy">It’s evident how mirrored molecules can affect lives when used properly and improperly. But what if every part of an entire organism were flipped?</p>
-      <a class="button-link blue" href="./mirror-molecules-life.html">Look at Life on the Other Side of the Mirror</a>
+
+      <p class="bridge dark-copy">
+        It’s evident how mirrored molecules can affect lives when used properly and improperly. But what if every part of an entire organism were flipped?
+      </p>
+
+      <a class="button-link blue center-button" href="./mirror-molecules-life.html">
+        Look at Life on the Other Side of the Mirror
+      </a>
     </section>
   </main>
 
