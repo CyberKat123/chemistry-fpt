@@ -1,45 +1,117 @@
-<div class="theory-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- MAGNETIC MINERALS -->
-  <article>
-    <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;margin-bottom:12px;">
-      <img src="https://www.quantamagazine.org/wp-content/uploads/2023/09/Rosettes-S.FurkanOzturk.webp"
-           alt="Magnetic mineral structures"
-           style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
+  <title>The Mystery of Homochirality</title>
 
-    <h3>Magnetic Minerals</h3>
-    <p style="font-size:16px; line-height:1.5;">
-      Various studies suggest that homochirality may have been created or amplified as a result of the magnetic minerals found on Earth. Experimental research discovered that the magnetic fields from magnetite, a common mineral on Earth, are biased towards a certain enantiomer of RAO (an important precursor of the RNA molecule). This result is theorized to be caused by the chiral-induced spin selectivity (C.I.S.S.) effect, which causes electron spins to interact differently in the presence of magnetic materials depending on molecule handedness. Once RAO began to accumulate, it formed crystalline structures that amplified the bias (a phenomenon known as amplification), resulting in a mixture with nearly pure chirality.
-    </p>
-  </article>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
-  <!-- EXTRATERRESTRIAL DELIVERY -->
-  <article>
-    <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;margin-bottom:12px;">
-      <img src="https://mediasvc.eurekalert.org/Api/v1/Multimedia/c7926812-8e4c-4a9a-86ab-d03d72e1a9d8/Rendition/low-res/Content/Public"
-           alt="Meteorite organic compounds"
-           style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
+  <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+  <link rel="stylesheet" href="./mirror-molecules.css">
+</head>
 
-    <h3>Extraterrestrial Delivery</h3>
-    <p style="font-size:16px; line-height:1.5;">
-      One of the most popular scientific theories for the origin of life on Earth is the delivery of organic compounds from a meteor, and this theory could also account for homochirality. Evidence such as the Murchison meteorite shows that meteorites can have more of one chirality of an organic molecule than the other. This means that meteors could have delivered an abundance of a certain enantiomer, which was slowly amplified over time until homochirality was achieved.
-    </p>
-  </article>
+<body data-page="life">
+  <canvas id="environment" aria-hidden="true"></canvas>
 
-  <!-- CIRCULAR POLARIZATION -->
-  <article>
-    <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;margin-bottom:12px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Circular.Polarization.Circularly.Polarized.Light_With.Components_Right.Handed.svg/500px-Circular.Polarization.Circularly.Polarized.Light_With.Components_Right.Handed.svg.png"
-           alt="Circularly polarized light diagram"
-           style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
+  <main>
 
-    <h3>Circularly Polarized Light</h3>
-    <p style="font-size:16px; line-height:1.5;">
-      Certain star-forming regions emit circularly polarized ultraviolet light, which can destroy one enantiomer of a compound, resulting in an abundance of the other. A similar effect was observed in the lab in a 2009 experiment where a racemic slurry of amino acid derivatives into pure acetonitrile as a result of polarized light. Scientists theorize this, in combination with amplification, could be a factor in the homochirality of life on Earth.
-    </p>
-  </article>
+    <section class="hero hero-life">
+      <div class="hero-copy">
+        <h1>The Mystery of Homochirality</h1>
+      </div>
+      <a class="scroll-cue" href="#content">↓</a>
+    </section>
 
-</div>
+    <section id="content" class="page-section life-section">
+
+      <div class="section-grid">
+        <div class="model-panel" data-model="dnaActual" aria-label="Interactive 3D B-DNA structure"></div>
+
+        <div class="copy-stack">
+          <h2>Earth Chose a Side</h2>
+          <p>We’ve explored how chemicals produced in labs are almost always racemic mixtures, containing equal amounts of (R) and (S) molecules, but this brings forth a mystery.</p>
+          <p>All life observed on Earth is “single-handed,” or homochiral, meaning that despite having the ability to exist in one of two enantiomers, molecules are biologically synthesized to prefer only one of these forms.</p>
+          <p>Biochemistry uses the D/L system to indicate the chirality of molecules. Despite other configurations being possible, all life on Earth uses exclusively L-amino acids and D-sugars as the fundamental building blocks of organic matter.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="page-section life-section">
+
+      <h2 class="section-heading">Leading Theories</h2>
+
+      <div class="theory-grid">
+
+        <!-- MAGNETIC MINERALS -->
+        <article>
+          <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;margin-bottom:12px;">
+            <img src="https://www.quantamagazine.org/wp-content/uploads/2023/09/Rosettes-S.FurkanOzturk.webp"
+                 alt="Magnetic mineral structures"
+                 style="width:100%;height:100%;object-fit:cover;display:block;">
+          </div>
+
+          <h3>Magnetic Minerals</h3>
+          <p style="font-size:16px; line-height:1.5;">
+            Various studies suggest that homochirality may have been created or amplified as a result of the magnetic minerals found on Earth. Experimental research discovered that the magnetic fields from magnetite, a common mineral on Earth, are biased towards a certain enantiomer of RAO (an important precursor of the RNA molecule). This result is theorized to be caused by the chiral-induced spin selectivity (C.I.S.S.) effect, which causes electron spins to interact differently in the presence of magnetic materials depending on molecule handedness. Once RAO began to accumulate, it formed crystalline structures that amplified the bias, resulting in a mixture with nearly pure chirality.
+          </p>
+        </article>
+
+        <!-- EXTRATERRESTRIAL DELIVERY -->
+        <article>
+          <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;margin-bottom:12px;">
+            <img src="https://mediasvc.eurekalert.org/Api/v1/Multimedia/c7926812-8e4c-4a9a-86ab-d03d72e1a9d8/Rendition/low-res/Content/Public"
+                 alt="Meteorite organic compounds"
+                 style="width:100%;height:100%;object-fit:cover;display:block;">
+          </div>
+
+          <h3>Extraterrestrial Delivery</h3>
+          <p style="font-size:16px; line-height:1.5;">
+            One of the most popular scientific theories for the origin of life on Earth is the delivery of organic compounds from meteorites. Evidence such as the Murchison meteorite shows that some meteorites contain an imbalance of enantiomers. This suggests that early Earth may have been seeded with a slight chemical preference that was later amplified until homochirality became dominant.
+          </p>
+        </article>
+
+        <!-- CIRCULAR POLARIZATION -->
+        <article>
+          <div style="width:100%;height:220px;overflow:hidden;border-radius:12px;margin-bottom:12px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Circular.Polarization.Circularly.Polarized.Light_With.Components_Right.Handed.svg/500px-Circular.Polarization.Circularly.Polarized.Light_With.Components_Right.Handed.svg.png"
+                 alt="Circularly polarized light diagram"
+                 style="width:100%;height:100%;object-fit:cover;display:block;">
+          </div>
+
+          <h3>Circularly Polarized Light</h3>
+          <p style="font-size:16px; line-height:1.5;">
+            Certain star-forming regions emit circularly polarized ultraviolet light, which can destroy one enantiomer of a compound, resulting in an abundance of the other. Experiments have shown that polarized light can produce small enantiomeric excesses, which may later be amplified into full homochirality over time.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="page-section life-section">
+      <div class="section-grid">
+        <div class="model-panel" data-model="asfvPolX" aria-label="Interactive 3D ASFV DNA polymerase X structure"></div>
+
+        <div class="copy-stack">
+          <h2>Mirror Polymerase Research</h2>
+          <p>Mirror polymerase research focuses on trying to chemically synthesize artificial components of DNA with the opposite handedness.</p>
+          <p><strong>2016:</strong> Dr. Ting Zhu’s lab at Tsinghua University synthesized ASFV Pol X entirely out of D-amino acids.</p>
+          <p><strong>2021:</strong> Researchers synthesized a 90-kDa high-fidelity mirror Pfu DNA polymerase able to assemble a kilobase-long mirror gene and stably store digital data.</p>
+          <p><strong>2025/26:</strong> One-pot multi-segment condensation greatly increased the speed of chemical synthesis.</p>
+
+          <a class="button-link" href="./mirror-molecules-risks.html">
+            Explore the Possibilities and Risks
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="./mirror-molecules.js"></script>
+</body>
+</html>
