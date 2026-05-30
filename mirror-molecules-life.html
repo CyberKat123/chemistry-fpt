@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Mystery of Homochirality</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
   <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
   <link rel="stylesheet" href="./mirror-molecules.css">
 </head>
+
 <body data-page="life">
   <canvas id="environment" aria-hidden="true"></canvas>
+
   <header class="site-nav">
     <a class="brand" href="./mirror-molecules.html">Mirror Molecules</a>
     <nav aria-label="Site pages">
@@ -33,38 +37,73 @@
 
     <section id="content" class="page-section life-section">
       <div class="section-grid">
+
         <div class="model-panel" data-model="dnaActual" aria-label="Interactive 3D B-DNA structure"></div>
+
         <div class="copy-stack">
           <h2>Earth Chose a Side</h2>
           <p>We’ve explored how chemicals produced in labs are almost always racemic mixtures, containing equal amounts of (R) and (S) molecules, but this brings forth a mystery.</p>
           <p>All life observed on Earth is “single-handed,” or homochiral, meaning that despite having the ability to exist in one of two enantiomers, molecules are biologically synthesized to prefer only one of these forms.</p>
           <p>Biochemistry uses the D/L system to indicate the chirality of molecules. Despite other configurations being possible, all life on Earth uses exclusively L-amino acids and D-sugars as the fundamental building blocks of organic matter.</p>
         </div>
+
       </div>
     </section>
 
     <section class="page-section life-section">
       <h2 class="section-heading">Leading Theories</h2>
+
       <div class="theory-grid">
-        <article><div class="image-card image-magnet"></div><h3>Magnetic Minerals</h3><p>Magnetite may bias certain enantiomers through the chiral-induced spin selectivity effect. Once RAO accumulated, crystalline amplification could push a small imbalance toward nearly pure chirality.</p></article>
-        <article><div class="image-card image-meteor"></div><h3>Extraterrestrial Delivery</h3><p>Evidence such as the Murchison meteorite shows that meteorites can have more of one chirality of an organic molecule than the other, delivering a bias that could be amplified over time.</p></article>
-        <article><div class="image-card image-light"></div><h3>Circularly Polarized Light</h3><p>Certain star-forming regions emit circularly polarized ultraviolet light, which can destroy one enantiomer of a compound and leave an abundance of the other.</p></article>
+
+        <article>
+          <img src="https://www.quantamagazine.org/wp-content/uploads/2023/09/Rosettes-S.FurkanOzturk.webp"
+               alt="Magnetic mineral crystal structures"
+               class="theory-image">
+
+          <div class="image-card image-magnet"></div>
+          <h3>Magnetic Minerals</h3>
+          <p>Magnetite may bias certain enantiomers through the chiral-induced spin selectivity effect. Once RAO accumulated, crystalline amplification could push a small imbalance toward nearly pure chirality.</p>
+        </article>
+
+        <article>
+          <img src="https://mediasvc.eurekalert.org/Api/v1/Multimedia/c7926812-8e4c-4a9a-86ab-d03d72e1a9d8/Rendition/low-res/Content/Public"
+               alt="Meteorite delivering organic compounds"
+               class="theory-image">
+
+          <div class="image-card image-meteor"></div>
+          <h3>Extraterrestrial Delivery</h3>
+          <p>Evidence such as the Murchison meteorite shows that meteorites can have more of one chirality of an organic molecule than the other, delivering a bias that could be amplified over time.</p>
+        </article>
+
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Circular.Polarization.Circularly.Polarized.Light_With.Components_Right.Handed.svg/500px-Circular.Polarization.Circularly.Polarized.Light_With.Components_Right.Handed.svg.png"
+               alt="Circularly polarized light diagram"
+               class="theory-image">
+
+          <div class="image-card image-light"></div>
+          <h3>Circularly Polarized Light</h3>
+          <p>Certain star-forming regions emit circularly polarized ultraviolet light, which can destroy one enantiomer of a compound and leave an abundance of the other.</p>
+        </article>
+
       </div>
     </section>
 
     <section class="page-section life-section">
       <div class="section-grid">
         <div class="model-panel" data-model="asfvPolX" aria-label="Interactive 3D ASFV DNA polymerase X structure"></div>
+
         <div class="copy-stack">
           <h2>Mirror Polymerase Research</h2>
           <p>Mirror polymerase research focuses on trying to chemically synthesize artificial components of DNA with the opposite handedness.</p>
           <p><strong>2016:</strong> Dr. Ting Zhu’s lab at Tsinghua University synthesized ASFV Pol X entirely out of D-amino acids.</p>
           <p><strong>2021:</strong> Researchers synthesized a 90-kDa high-fidelity mirror Pfu DNA polymerase able to assemble a kilobase-long mirror gene and stably store digital data.</p>
           <p><strong>2025/26:</strong> One-pot multi-segment condensation greatly increased the speed of chemical synthesis.</p>
+
           <a class="button-link" href="./mirror-molecules-risks.html">Explore the Possibilities and Risks</a>
         </div>
       </div>
     </section>
+
   </main>
 
   <script type="module" src="./mirror-molecules.js"></script>
